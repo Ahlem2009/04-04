@@ -1,0 +1,16 @@
+<!-- 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-5 bg-light">
+            <app-sidebar  ></app-sidebar>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <app-header></app-header>
+            <router-outlet></router-outlet>
+        </div>
+    </div> -->
+
+    <app-sidebar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidebar>
+<div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
+  <router-outlet></router-outlet>
+</div>

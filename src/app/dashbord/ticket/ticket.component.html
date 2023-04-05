@@ -1,0 +1,48 @@
+<div class="card-header bg-primary text-white px-6">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="me-6">
+            <h2 class="card-title text-white mb-0">List Ticket</h2>
+            <div class="card-subtitle">les derniéres tickets</div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-lg btn-text-light btn-icon me-n2 dropdown-toggle" id="segmentsDropdownButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">autres tickets</i></button>
+            <ul class="dropdown-menu" aria-labelledby="segmentsDropdownButton">
+                <li><a class="dropdown-item" href="#!">depuis 1 mois</a></li>
+                <li><a class="dropdown-item" href="#!">depuis 2 mois</a></li>
+                <li><a class="dropdown-item" href="#!">depuis 3 mois</a></li>
+ 
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="card-body p-6">
+   
+       
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    
+                    <th scope="col">Nom</th>
+                    <th scope="col">Periority</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item2 of item2" >
+                  
+                    <td>
+                        <ngb-highlight [result]=" item2.nom "></ngb-highlight>
+                    </td>
+                    <td><ngb-highlight [result]="item2.priority"></ngb-highlight></td>
+                    <td><ngb-highlight [result]="item2.category " ></ngb-highlight></td>
+                    <td><ngb-highlight [result]="item2.date" ></ngb-highlight></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+
+
+

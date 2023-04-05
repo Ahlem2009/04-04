@@ -1,0 +1,71 @@
+<div class="sidebar bg-light " [ngClass]="{ 'expanded': isExpanded }">
+  <div class="header">
+    <!-- <h1 class="title">
+      deskbird
+    </h1> -->
+    
+   <div class="col-sm-auto bg-light sticky-top">
+          <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+            <div class="toggle" (click)="handleSidebarToggle()">
+              <span class="chevron"></span>
+            </div>
+            <div class="content">
+               <div class="sidebar-header TITLE d-flex align-items-center py-4 px-3">
+                <img
+        class="avatar shadow-0 img-fluid rounded-circle" src="assets/img/testimonial-1.jpg" alt="..."> </div>
+      <div class="nav-item">
+        <h1 class="h6 mb-2">Nom</h1>
+       
+        <p class="text-sm text-gray-500 fw-light mb-0 lh-1">Titre</p>
+      </div></div>
+      <hr>
+    
+  </div>
+  <div class="content">
+    <div class="children " >
+      <div class="link">
+          <a routerLink="/dashboard" class="content link-dark" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <div class="icon"> <i class="fa fa-home"></i></div> <div class="title">HOME</div>
+          </a>
+        </div>
+        <div class="link">
+            <a routerLink="/gestion-doc" class="content link-dark" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+              <div class="icon"><i class="fa fa-newspaper"></i></div> <div class="title">List des articles</div>
+          </a>
+        </div>
+        <div class="link">
+          <a routerLink="/gestion-ticket" class="content link-dark" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Tickets">
+            <div class="icon"><i class="fa fa-list-alt"></i></div> <div class="title">List des Tickets</div>
+                      </a>
+        </div>
+        <div class="link">
+          <a routerLink="/gestion-clt" class="content link-dark"data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+            <div class="icon"><i class="fa fa-address-book"></i></div> <div class="title">Liste des clients</div>
+
+          </a>
+        </div>
+        <div class="link">
+        <a routerLink="/gestion-expert" class="content link-dark" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+          <div class="icon"><i class="fa fa-address-card"></i> </div> <div class="title">Liste des experts</div>
+        </a>
+      </div>
+      <div class="link">
+      <a routerLink="/gestion-manager" class="content link-dark"data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+        <div class="icon"><i class="fa fa-id-card"></i></div> <div class="title">Liste des managers</div>
+      </a>
+    </div>
+    <div class="link">
+          <a routerLink="/gestion-categorie" class="content link-dark"  data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+            <div class="icon"><i class="fa fa-list-ul"></i></div> <div class="title">Liste des categories</div>
+
+          </a>
+        </div>
+        <div class="link">
+      <a routerLink="/gestion-offre" class="content link-dark" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+        <div class="icon"><i class="fa fa-user-circle"></i></div> <div class="title">Liste des services</div>
+      </a>
+    </div>
+</div>
+ 
+  </div>
+</div>

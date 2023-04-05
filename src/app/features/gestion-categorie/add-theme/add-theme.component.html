@@ -1,0 +1,68 @@
+<div class="container-xxl bg-light my-6 py-6 ">
+	<div class="card">
+		<div class="container my-4 py-4 ">
+				<div class="row ">
+				
+					<div class="col-lg-4 col-md-12">
+						<label>Categorie :</label>
+							<select class="form-select" ngModel="selectedCategory" >
+								<option aria-selected="true">--select Categorie--</option>
+								<option *ngFor="let listCategory of item" ngValue="category">{{listCategory.name}}</option>
+							</select>
+						
+						
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="form-group">
+                            <label for="exampleTheme">Théme :</label>
+                            <input type="Text" class="form-control" id="exampleTheme" placeholder="Entrer Théme">
+                            
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+						<button class="btn btn-primary text-uppercase" type="submit">Ajouter <i class="fa fa-check"></i></button>
+						
+					</div>
+				</div>
+				<div class="row g-3 mt-1">
+					
+				
+
+				
+
+
+					<div class=" col-lg-10 col-md-8"></div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                
+                                <th scope="col">ID</th>
+                                <th scope="col">theme</th>
+                               
+                                <th scope="col">Action</th>
+                              
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item1 of item" >
+                              
+                                <td>
+                                  {{item1.id}}
+                                </td>
+                                <td>{{item1.name}}</td>
+                               
+                               
+                                <td>
+                                    <button class="btn btn-primary text-uppercase ml10" ngbTooltip="modifier"><i class="fa fa-wrench" ></i></button>
+                                    <button class="btn btn-primary text-uppercase my-2 ml10" ngbTooltip="supprimer"><i class="fa fa-trash" ></i></button>
+                                   
+                                </td>
+                            </tr>
+                         
+                        </tbody>
+                    </table>
+
+				</div>
+		</div>
+	</div>
+</div>
